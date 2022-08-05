@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Calculator</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.main {
+			margin: 0;
+			padding: 50px;
+
+		}
+
+		table {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		textarea {
+			display: block;
+			margin-bottom: 8px;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 5px;
+			width: 400px;
+			font-size: 30px;
+			font-weight: bolder;
+		}
+
+		button {
+			height: 60px;
+			width: 100px;
+			font-size: 30px;
+			font-weight: bolder;
+		}
+
+		.head {
+			text-align: center;
+			font-weight: bolder;
+			background-color: rgba(236, 237, 237, 0.995);
+			padding-top: 20px;
+			padding-bottom: 5px;
+
+		}
+
+		h1 {
+			margin-bottom: 10px;
+			font-size: 50px;
+		}
+
+		p {
+			margin-bottom: 5px;
+		}
+
+		.container {
+			height: 800px;
+			background: url(/static/mika-baumeister-Wpnoqo2plFA-unsplash.jpg);
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="head">
+
+			<h1 class="display-3">Calculator Webapp</h1>
+			<p class="lead">
+				<marquee behavior="scroll" direction="right" width="650px"> This is a simple calculator application
+					developed by Piyush Niranjan.</marquee>
+			</p>
+			<hr>
+			<hr>
+		</div>
+		<div class="main">
+			<textarea id="resultArea" readonly rows="3" cols="21"></textarea>
+
+			<table>
+				<tr>
+					<td></td>
+					<td></td>
+					<td><button id="clrTxt" >C</button></td>
+					<td><button id="del" >&#9746;</button></td>
+				</tr>
+
+				<tr>
+					<td><button id="num7">7</button></td>
+					<td><button id="num8">8</button></td>
+					<td><button id="num9">9</button></td>
+					<td><button id="op3" >&div;</button></td>
+				</tr>
+
+				<tr>
+					<td><button id="num4">4</button></td>
+					<td><button id="num5">5</button></td>
+					<td><button id="num6">6</button></td>
+					<td><button id="op2">&times;</button></td>
+				</tr>
+
+				<tr>
+					<td><button id="num1">1</button></td>
+					<td><button id="num2">2</button></td>
+					<td><button id="num3">3</button></td>
+					<td><button id="op1">&minus;</button></td>
+				</tr>
+
+				<tr>
+					<td><button id="decp">.</button></td>
+					<td><button id="num0">0</button></td>
+					<td><button id="eq">=</button></td>
+					<td><button id="op0">&plus;</button></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<script type="text/javascript" src="/static/calc.js"></script>
+</body>
+
+</html>
